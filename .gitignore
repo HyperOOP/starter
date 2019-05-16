@@ -1,0 +1,5 @@
+node_modules/**
+**/log.txt
+/.rpt2_cache/*
+/dist/css/*
+/dist/js/*
