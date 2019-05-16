@@ -11,13 +11,13 @@ const { watch } = require("faqtor-of-watch");
 
 const
     bs = bsync.create("HyperOOP Starter"),
-    builtPath = "site/dist",
+    builtPath = "dist",
     lessSource = "src/style.less",
     lessDest = `${builtPath}/css/style.css`,
     indexSrc = "src/index.tsx",
     indexDst = `${builtPath}/js/index.js`,
     indexMinDst = `${builtPath}/js/index.min.js`,
-    toClean = [builtPath],
+    toClean = [`${builtPath}/js`, `${builtPath}/css`],
     toWipe = toClean.concat(["./node_modules", "./.rpt2_cache"]),
     watchDebounce = 2000;
 
@@ -44,7 +44,7 @@ const
     bsConfig = {
         server: {
             injectChanges: true,
-            baseDir: "site",
+            baseDir: "dist",
             reloadDebounce: 10000,
         }
     };
@@ -67,7 +67,7 @@ const
         .task("build all"),
     clean = cmd(`rimraf ${toClean.join(" ")}`),
     wipe = cmd(`rimraf ${toWipe.join(" ")}`);
-    reload = bs.reload("site/**/*").factor(),
+    reload = bs.reload("dist/**/*").factor(),
     serve = bs.init(bsConfig),
     start = seq(build, all(serve, watch(buildAllList.concat([reload]), watchDebounce)));
 

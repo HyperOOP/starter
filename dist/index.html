@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- UIkit CSS -->
-    <link rel="stylesheet" href="dist/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <!-- UIkit JS  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.24/js/uikit.min.js"></script>
@@ -15,6 +15,12 @@
     <title>Document</title>
 </head>
 <body id="main">
-    
+
+    <script src="./js/index.js"></script>
+    <script>
+        if (typeof Proxy === "undefined") {
+            document.getElementById("contentPlace").innerHTML = "<h2>Sorry, this site is intended for use in modern browsers only.</h2>"
+        }
+    </script>    
 </body>
 </html>
