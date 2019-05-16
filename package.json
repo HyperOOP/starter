@@ -23,7 +23,7 @@
     "starter",
     "boilerplate"
   ],
-  "author": "Osman Bineev",
+  "author": "Osman Bineev (place YOUR NAME here)",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^10.12.12",
