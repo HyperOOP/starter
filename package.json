@@ -39,7 +39,7 @@
     "rollup": "^0.67.4",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^3.4.0",
-    "rollup-plugin-typescript2": "^0.18.0",
+    "rollup-plugin-typescript2": "^0.21.0",
     "typescript": "^3.2.1",
     "uikit": "^3.0.0-rc.25"
   },
