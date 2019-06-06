@@ -28,7 +28,7 @@
   "devDependencies": {
     "@types/node": "^10.12.12",
     "faqtor": "^0.2.1",
-    "faqtor-of-browser-sync": "0.0.2",
+    "faqtor-of-browser-sync": "0.0.3",
     "faqtor-of-rollup": "0.0.4",
     "faqtor-of-uglify": "0.0.2",
     "faqtor-of-watch": "^0.1.0",
